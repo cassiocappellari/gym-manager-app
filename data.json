@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Cássio",
+      "birth": 1593561600000,
+      "gender": "M",
+      "services": "Yoga",
+      "created_at": 1594657699310
+    },
+    {
+      "id": 2,
+      "avatar_url": "http:/google.com",
+      "name": "Cássio",
+      "birth": 1593561600000,
+      "gender": "M",
+      "services": "Gym",
+      "created_at": 1594657732489
+    }
+  ]
+}
