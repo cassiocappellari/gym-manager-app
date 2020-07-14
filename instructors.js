@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
+const {age} = require('./useful')
 
 exports.show = function(req, res) {
     const {id} = req.params
@@ -12,7 +13,14 @@ exports.show = function(req, res) {
         return res.send('Instructor not founded!')
     }
 
-    return res.send(foundInstructor)
+    const instructor = {
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(','),
+        created_at: "",
+    }
+
+    return res.render('instructors/show', {instructor})
 }
 
 exports.post = function(req, res) {

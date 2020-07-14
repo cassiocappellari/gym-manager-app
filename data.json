@@ -4,19 +4,28 @@
       "id": 1,
       "avatar_url": "http://google.com",
       "name": "Cássio",
-      "birth": 1593561600000,
+      "birth": 584409600000,
       "gender": "M",
-      "services": "Yoga",
-      "created_at": 1594657699310
+      "services": "Gym",
+      "created_at": 1594759008174
     },
     {
       "id": 2,
-      "avatar_url": "http:/google.com",
-      "name": "Cássio",
-      "birth": 1593561600000,
+      "avatar_url": "http://google.com",
+      "name": "Tatiana",
+      "birth": 687139200000,
+      "gender": "F",
+      "services": "Yoga",
+      "created_at": 1594759230701
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://google.com",
+      "name": "Bruno",
+      "birth": 585273600000,
       "gender": "M",
       "services": "Gym",
-      "created_at": 1594657732489
+      "created_at": 1594759376071
     }
   ]
 }
