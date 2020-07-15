@@ -55,6 +55,24 @@ exports.post = function(req, res) {
 
         return res.redirect('/instructors')
     })
+}
 
-    //res.send(req.body)
+exports.edit = function(req, res) {
+    const {id} = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor){
+        return id == instructor.id
+    })
+
+    if(!foundInstructor) {
+        return res.send('Instructor not founded!')
+    }
+
+    const instructor = {
+        ...foundInstructor,
+        age: age(foundInstructor.birth),
+        services: foundInstructor.services.split(','),
+    }
+
+    return res.render('instructors/edit', {instructor})
 }
