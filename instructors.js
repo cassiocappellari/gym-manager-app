@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-const {age} = require('./useful')
+const {age, date} = require('./useful')
 Intl = require('intl')
 
 exports.show = function(req, res) {
@@ -70,8 +70,7 @@ exports.edit = function(req, res) {
 
     const instructor = {
         ...foundInstructor,
-        age: age(foundInstructor.birth),
-        services: foundInstructor.services.split(','),
+        birth: date(foundInstructor.birth)
     }
 
     return res.render('instructors/edit', {instructor})
