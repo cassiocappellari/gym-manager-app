@@ -1,21 +1,12 @@
 {
   "instructors": [
     {
-      "id": 1,
+      "id": "2",
       "avatar_url": "https://source.unsplash.com/collection/6800490/500x500",
       "name": "Cássio",
       "birth": 584409600000,
       "gender": "M",
       "services": "Gym",
-      "created_at": 1594759008174
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/6800490/500x500",
-      "name": "Tatiana",
-      "birth": 687139200000,
-      "gender": "F",
-      "services": "Yoga",
       "created_at": 1594759230701
     },
     {
