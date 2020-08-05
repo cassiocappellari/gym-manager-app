@@ -142,7 +142,8 @@ header {
 
 /*== FROM ==*/
 
-input {
+input,
+select {
     width: 100%;
     outline: none;
     color: #555;

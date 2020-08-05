@@ -1,24 +1,26 @@
 {
   "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80",
+      "name": "Cássio Cappellari",
+      "email": "cassiocappellari@gmail.com",
+      "birth": 584409600000,
+      "gender": "M",
+      "blood": "O+",
+      "weight": "62",
+      "height": "180"
+    }
   ],
   "instructors": [
     {
-      "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80",
-      "name": "Cássio Cappellari",
-      "birth": 584409600000,
-      "gender": "M",
-      "services": "Gym",
-      "created_at": 1594759230701
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://images.unsplash.com/photo-1437935690510-49ce2c715aee?ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
-      "name": "David Goggins",
-      "birth": 789004800000,
-      "gender": "M",
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Tatiana",
+      "birth": 687139200000,
+      "gender": "F",
       "services": "Gym, Yoga",
-      "created_at": 1594921797531
+      "created_at": 1595260326300
     }
   ]
 }

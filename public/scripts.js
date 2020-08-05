@@ -1,5 +1,6 @@
 const currentPage = location.pathname
 const menuItens = document.querySelectorAll('header .links a')
+const formDelete = document.querySelector('#form-delete')
 
 for (let item of menuItens) {
     if(currentPage.includes(item.getAttribute('href'))) {
@@ -7,3 +8,9 @@ for (let item of menuItens) {
     }
 }
 
+formDelete.addEventListener('submit', function(event){
+    const deleteOption = confirm('Are you sure?')
+    if(!deleteOption) {
+        event.preventDefault()
+    }
+})
