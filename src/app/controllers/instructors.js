@@ -1,9 +1,12 @@
-const {age, date} = require('../../lib/useful')
+const Instructor = require('../models/Instructor')
+
 Intl = require('intl')
 
 module.exports = {
     index(req, res){
-        return res.render('instructors/index')
+        Instructor.all(function(instructors) {
+            return res.render('instructors/index', {instructors})
+        })
     },
     create(req, res){
         return res.render('instructors/create')
@@ -16,10 +19,12 @@ module.exports = {
                return res.send('Please, fill all the fields!')
             }
         }
+
+        Instructor.create(req.body, function(instructor) {
+
+            return res.redirect(`/instructors/${instructor.id}`)
+        })
         
-        let {avatar_url, name, birth, gender, services} = req.body
-    
-        return
     },
     show(req, res){
         return
