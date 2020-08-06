@@ -1,6 +1,5 @@
 const Instructor = require('../models/Instructor')
 const {age, date} = require('../../lib/useful')
-
 Intl = require('intl')
 
 module.exports = {
@@ -62,6 +61,8 @@ module.exports = {
         })
     },
     delete(req, res){
-        return
+        Instructor.delete(req.body.id, function() {
+            return res.redirect(`/instructors`)
+        })
     }
 }
